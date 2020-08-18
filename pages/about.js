@@ -1,7 +1,5 @@
 import React, { Component } from "react"
-import Head from "next/head"
 import Link from "next/link"
-
 import axios from "axios"
 
 export default class extends Component {
@@ -13,33 +11,32 @@ export default class extends Component {
   }
 
   render() {
+    const { posts } = this.props
     return (
-      <div className="container">
-
-        <main>
-          <h1>Hello</h1>
-          {this.props.posts.title}
-        </main>
-        <footer>
-          <Link href='/' >
-            <a>
-              Go to main
-            </a>
+      <>
+        <h1>This is an about page</h1>
+        <div className="post_wrap">
+          <h2>{posts.title}</h2>
+          <p>{posts.body}</p>
+        </div>
+        <div className="link-wrap">
+          <Link href='/'>
+            Home
           </Link>
-        </footer>
+          <Link href='/test'>
+            Test
+          </Link>
+        </div>
         <style jsx>{`
-        .container {
-          background-color: antiquewhite;
-        }
       `}</style>
-      </div>
+      </>
     )
   }
 }
 
 
 export async function getStaticProps(context) {
-  let {data} = await axios.get("https://jsonplaceholder.typicode.com/posts/2")
+  let { data } = await axios.get("https://jsonplaceholder.typicode.com/posts/2")
 
   return {
     props: {
