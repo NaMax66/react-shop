@@ -1,5 +1,7 @@
 import React, { Component } from "react"
 import Head from "next/head"
+import Link from "next/link"
+
 import axios from "axios"
 
 export default class extends Component {
@@ -13,17 +15,17 @@ export default class extends Component {
   render() {
     return (
       <div className="container">
-        <Head>
-          <title>Create Next App</title>
-          <link rel="icon" href="/favicon.ico"/>
-        </Head>
 
         <main>
           <h1>Hello</h1>
           {this.props.posts.title}
         </main>
         <footer>
-
+          <Link href='/' >
+            <a>
+              Go to main
+            </a>
+          </Link>
         </footer>
         <style jsx>{`
         .container {
