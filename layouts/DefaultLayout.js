@@ -2,6 +2,7 @@ import Head from "next/head"
 import React from "react"
 import Navbar from "../components/Navbar"
 import InlineSVG from "../components/InlineSVG"
+
 export default function({ children }) {
   return (
     <div className="container">
@@ -9,14 +10,28 @@ export default function({ children }) {
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico"/>
       </Head>
-      <Navbar />
+      <Navbar/>
       <main>
         {children}
       </main>
 
-      <footer>
-        <InlineSVG icon='vk' />
-        <img src="vercel.svg" alt="" />
+      <footer className="v-footer_background">
+        <div className="wrapper">
+          <div className="v-footer-info">
+            <p>&copy; This is a sample website by <br/> Max Naidovich </p>
+            <div className="v-footer_social">
+              <a className="v-footer_social-link" href="https://t.me/namax66" target="_blank">
+                <InlineSVG icon="telegram"/>
+              </a>
+              <a className="v-footer_social-link" href="https://github.com/NaMax66" target="_blank">
+                <InlineSVG icon="github"/>
+              </a>
+              <a className="v-footer_social-link" href="https://www.linkedin.com/in/max-naydovich" target="_blank">
+                <InlineSVG icon="linkedin"/>
+              </a>
+            </div>
+          </div>
+        </div>
       </footer>
 
       <style jsx>{`
@@ -38,13 +53,26 @@ export default function({ children }) {
           align-items: center;
         }
 
-        footer {
-          width: 100%;
-          height: 100px;
-          border-top: 1px solid #eaeaea;
+        .v-footer_background {
+          background-color: var(--c-black);
+        }
+        .v-footer-info {
+          font-size: 1.8rem;
+          color: var(--c-white);
           display: flex;
-          justify-content: center;
+          justify-content: space-between;
           align-items: center;
+          padding: 2rem 0;
+        }
+        .v-footer_social-link {
+          width: 40px;
+          height: 40px;
+        }
+       
+        
+        
+        .v-footer-info p {
+          flex-basis: 30%;
         }
 
         a {
