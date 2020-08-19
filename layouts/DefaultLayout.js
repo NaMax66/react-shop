@@ -1,8 +1,6 @@
 import Head from "next/head"
 import React from "react"
-import Link from "next/link"
-
-
+import Navbar from "../components/Navbar"
 export default function({ children }) {
   return (
     <div className="container">
@@ -10,7 +8,7 @@ export default function({ children }) {
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico"/>
       </Head>
-
+      <Navbar />
       <main>
         {children}
       </main>
@@ -149,6 +147,12 @@ export default function({ children }) {
       `}</style>
 
       <style jsx global>{`
+        :root {
+          --c-white: #F5F5F5;
+          --c-light-gray: #BDBDBD;
+          --c-black: #212121;
+          --c-orange: #f56a3f;
+        }
         html,
         body {
           padding: 0;
