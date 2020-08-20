@@ -7,7 +7,7 @@ export default function() {
         position: fixed;
         top: 0;
         width: 100%;
-        height: 20px;
+        height: 6rem;
         background-color: var(--c-black);        
       }
     `}</style>
