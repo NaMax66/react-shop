@@ -21,13 +21,13 @@ export default function({ children }) {
             <p>&copy; This is a sample website by <br/> Max Naidovich </p>
             <div className="v-footer_social">
               <a className="v-footer_social-link" href="https://t.me/namax66" target="_blank">
-                <InlineSVG icon="telegram"/>
+                <InlineSVG color="white-orange" icon="telegram"/>
               </a>
               <a className="v-footer_social-link" href="https://github.com/NaMax66" target="_blank">
-                <InlineSVG icon="github"/>
+                <InlineSVG color="white-orange" icon="github"/>
               </a>
               <a className="v-footer_social-link" href="https://www.linkedin.com/in/max-naydovich" target="_blank">
-                <InlineSVG icon="linkedin"/>
+                <InlineSVG color="white-orange" icon="linkedin"/>
               </a>
             </div>
           </div>
@@ -65,12 +65,11 @@ export default function({ children }) {
           padding: 2rem 0;
         }
         .v-footer_social-link {
+          display: inline-block;
           width: 40px;
           height: 40px;
         }
        
-        
-        
         .v-footer-info p {
           flex-basis: 30%;
         }
