@@ -66,6 +66,10 @@ export default function({ children }) {
           width: 4rem;
           height: 4rem;
         }
+        
+        .v-footer_social-link:not(:last-child) {
+          margin-right: 2rem;
+        }
        
         .v-footer-info p {
           flex-basis: 30%;
