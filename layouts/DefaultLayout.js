@@ -39,6 +39,7 @@ export default function({ children }) {
           min-height: 100vh;
           display: flex;
           flex-direction: column;
+          background-color: var(--c-white);
         }
 
         main {

@@ -1,16 +1,13 @@
 import Link from "next/link"
-
+import AppLogo from "../components/AppLogo"
 export default function Home() {
   return (
     <>
-      <h1 className="title">
-        Welcome to <a href="https://nextjs.org">Next.js!</a>
-      </h1>
-
-      <p className="description">
-        Get started by editing <code>pages/index.js</code>
-      </p>
-
+      <div className="wrapper info-wrapper">
+        <AppLogo />
+        <h1 className='title'>ReactShop - shop for hobbyists</h1>
+        <h2 className='subtitle'>Books, T-shirts, and sundries - for those who value their development and love stylish, pleasant-looking clothes.</h2>
+      </div>
       <div className="links">
         <Link href="/books">
           <a className="link_item" href="/t_shirts">Books</a>
@@ -24,6 +21,25 @@ export default function Home() {
         </Link>
       </div>
       <style jsx>{`
+        .info-wrapper {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        .title {
+          font-weight: 400;
+          font-size: 6rem;
+          color: var(-c--black);
+          margin-bottom: 2rem;
+          text-align: center;
+        }
+        .subtitle {
+          font-weight: 300;
+          font-size: 4rem;
+          color: var(-c--black);
+          margin-bottom: 5rem;
+          text-align: center;
+        }
         .link_item {
           display: inline-block;
           border-radius: 3px;
@@ -51,7 +67,6 @@ export default function Home() {
           color: var(--c-white);
           background-color: var(--c-orange);
         }
-       
       `}</style>
     </>
   )
