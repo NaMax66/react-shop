@@ -6,7 +6,7 @@ export default function Home() {
       <div className="wrapper info-wrapper">
         <AppLogo />
         <h1 className='title'>ReactShop - shop for hobbyists</h1>
-        <h2 className='subtitle'>Books, T-shirts, and sundries - for those who value their development and love stylish, pleasant-looking clothes.</h2>
+        <h2 className='subtitle'>Books, T-shirts, and sundries - for those who value their development and <br/> love stylish, pleasant-looking clothes.</h2>
       </div>
       <div className="links">
         <Link href="/books">
