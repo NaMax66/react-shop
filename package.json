@@ -17,6 +17,8 @@
     "react-dom": "16.13.1"
   },
   "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.10.4",
+    "@babel/plugin-proposal-decorators": "^7.10.5",
     "svg-sprite": "^1.5.0"
   }
 }
