@@ -4,7 +4,7 @@ console.log(getBaseUrl())
 export default function({data}) {
 return <>
         <h1>Books will be here</h1>
-        <p>{data.name}</p>
+        <p>{data[0].title}</p>
       </>
 }
 

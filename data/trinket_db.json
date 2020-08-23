@@ -1,0 +1,32 @@
+[
+  {
+    "img": "levi-ventura-Hd2T6EzW_2Q-unsplash.jpg",
+    "title": "Чёрный глобус",
+    "price": 5400,
+    "material": "дерево"
+  },
+  {
+    "img": "fidel-fernando-3b98VQC1QJE-unsplash.jpg",
+    "title": "Кофеварка холостяка",
+    "price": 2900,
+    "material": "металл"
+  },
+  {
+    "img": "claudio-schwarz-purzlbaum-PuRuy00uOBs-unsplash.jpg",
+    "title": "Светильник \"Отрыв!\"",
+    "price": 3450,
+    "material": "пластик"
+  },
+  {
+    "img": "blake-cheek-ADTxzqFCg6U-unsplash.jpg",
+    "title": "Газовая лампа \"Старый шахтер\"",
+    "price": 6100,
+    "material": "медь"
+  },
+  {
+    "img": "william-navarro-FyeVOF4P4YI-unsplash.jpg",
+    "title": "Светящийся глобус",
+    "price": 1850,
+    "material": "пластик"
+  }
+]
