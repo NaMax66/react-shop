@@ -1,6 +1,5 @@
 import axios from "axios"
 import {getBaseUrl} from "../utils"
-console.log(getBaseUrl())
 export default function({data}) {
 return <>
         <h1>Books will be here</h1>

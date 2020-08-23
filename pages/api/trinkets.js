@@ -1,6 +1,6 @@
-import books from '../../data/book_database.json'
+import trinkets from '../../data/trinket_db.json'
 export default (req, res) => {
   res.statusCode = 200
   res.setHeader('Content-Type', 'application/json')
-  res.end(JSON.stringify(books))
+  res.end(JSON.stringify(trinkets))
 }

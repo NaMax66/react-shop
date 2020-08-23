@@ -1,5 +1,6 @@
 import axios from "axios"
 import {Component} from 'react'
+import { getBaseUrl } from "../utils"
 
 export default class extends Component {
   render() {
@@ -12,10 +13,10 @@ export default class extends Component {
 }
 
 export async function getStaticProps(context) {
-  let { data } = await axios.get("https://jsonplaceholder.typicode.com/posts/2")
+  let { data } = await axios.get(getBaseUrl() + "/api/trinkets")
   return {
     props: {
-      posts: data
+      data
     }
   }
 }
