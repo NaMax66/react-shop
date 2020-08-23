@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "set NODE_ENV=development && next dev",
     "build": "next build",
     "start": "next start",
     "img": "svg-sprite --log=info --symbol --symbol-dest=public --symbol-sprite=sprite.svg public/icons/*.svg"
@@ -14,7 +14,8 @@
     "mobx-react": "^6.2.5",
     "next": "9.3.5",
     "react": "16.13.1",
-    "react-dom": "16.13.1"
+    "react-dom": "16.13.1",
+    "swr": "^0.3.1"
   },
   "devDependencies": {
     "@babel/plugin-proposal-class-properties": "^7.10.4",

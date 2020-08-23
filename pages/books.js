@@ -1,21 +1,18 @@
 import axios from "axios"
-import {Component} from 'react'
-
-export default class extends Component {
-  render() {
-    const {posts} = this.props
-    return <>
-      <h1>Books will be here</h1>
-      <p>{posts.title}</p>
-    </>
-  }
+import {getBaseUrl} from "../utils"
+console.log(getBaseUrl())
+export default function({data}) {
+return <>
+        <h1>Books will be here</h1>
+        <p>{data.name}</p>
+      </>
 }
 
 export async function getStaticProps(context) {
-  let { data } = await axios.get("https://jsonplaceholder.typicode.com/posts/2")
+  let { data } = await axios.get(getBaseUrl() + "/api/books")
   return {
     props: {
-      posts: data
+      data
     }
   }
 }
